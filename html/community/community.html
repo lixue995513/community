@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>智慧社区</title>
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]-->
+
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="../../css/app.css">
+
+</head>
+
+<body>
+<div class="index">
+    <!--头部部分start-->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">智慧社区</h1>
+    </header>
+    <!--头部部分end-->
+
+    <!--轮播图start-->
+    <div class="mui-content hidden"></div>
+
+    <div id="slider" class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="../../img/banner.png">
+                </a>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../../img/banner1.png">
+                </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../../img/banner2.png">
+                </a>
+            </div>
+            <!-- 第三张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../../img/banner3.png">
+                </a>
+            </div>
+            <!-- 第四张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../../img/banner4.png">
+                </a>
+            </div>
+            <!-- 第五张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../../img/banner5.png">
+                </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="../../img/banner.png">
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+    <!--轮播图end-->
+
+    <!--------主体部分start------->
+    <div class="new_new mui-clearfix">
+        <a href="#">
+            <img src="../../img/book.png" alt="">
+        </a>
+        <a href="#">
+            <img src="../../img/gift.png" alt="">
+        </a>
+    </div>
+    <div class="activity mui-clearfix">
+        <div class="ac_title">
+            <span>小区活动</span>
+            <a href="#">
+                <span>更多 > </span>
+            </a>
+        </div>
+        <div class="ac_cont mui-clearfix">
+            <a href="#">
+                <img src="../../img/play.png" alt="">
+            </a>
+            <div class="ac_contt">
+                <a href="#">
+                    <span>篮球比赛</span>
+                    <span>幸福小区于11月15日下午,在篮球场举行篮球比赛</span>
+                    <span>2017-6-30</span>
+                </a>
+            </div>
+        </div>
+        <div class="ac_cont mui-clearfix">
+            <a href="#">
+                <img src="../../img/play.png" alt="">
+            </a>
+            <div class="ac_contt">
+                <a href="#">
+                    <span>篮球比赛</span>
+                    <span>幸福小区于11月15日下午,在篮球场举行篮球比赛</span>
+                    <span>2017-6-30</span>
+                </a>
+            </div>
+        </div>
+        <div class="ac_cont mui-clearfix">
+            <a href="#">
+                <img src="../../img/play.png" alt="">
+            </a>
+            <div class="ac_contt">
+                <a href="#">
+                    <span>篮球比赛</span>
+                    <span>幸福小区于11月15日下午,在篮球场举行篮球比赛</span>
+                    <span>2017-6-30</span>
+                </a>
+            </div>
+        </div>
+        <div class="ac_cont mui-clearfix">
+            <a href="#">
+                <img src="../../img/play.png" alt="">
+            </a>
+            <div class="ac_contt">
+                <a href="#">
+                    <span>篮球比赛</span>
+                    <span>幸福小区于11月15日下午,在篮球场举行篮球比赛</span>
+                    <span>2017-6-30</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!------------底部部分start------------>
+   <footer>
+       <a href="#">
+           <img src="../../img/home.png" alt="">
+           <span class="foot_word">社区</span>
+       </a>
+       <a href="#">
+           <img src="../../img/shop.png" alt="">
+           <span class="foot_word">服务</span>
+       </a>
+       <a href="#">
+           <img src="../../img/red.png" alt="">
+           <span class="foot_word">红色引擎</span>
+       </a>
+       <a href="#">
+           <img src="../../img/mine.png" alt="">
+           <span class="foot_word">我的</span>
+        </a>
+   </footer>
+    <!------------底部部分end------------>
+</div>
+</body>
+</html>
+<!--轮播图js特效-->
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    var slider = mui("#slider");
+    slider.slider({
+        interval: 5000
+    });
+    //    mui.openWindowWithTitle({
+    //        url:'html/service/service.html',
+    //        id:'service'
+    //    });
+
+</script>

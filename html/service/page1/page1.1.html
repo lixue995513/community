@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>城市居民生育生办理</title>
+    <!--<link rel="stylesheet" href="../../../css/common.css">-->
+    <link rel="stylesheet" href="page1.1.css"/>
+    <script src="page1.1.js"></script>
+</head>
+<body>
+    <header>
+        <a href="page1.html">
+            <img src="../../../img/return.png" alt="">
+        </a>
+        生育证办理申请
+    </header>
+    <form action="#">
+        <div class="con_list">
+            <p>办理人&nbsp;&nbsp;&nbsp;:<input type="text" id="name" placeholder="&nbsp;请输入"></p>
+            <p> 办理地点:<input type="text" id="live" placeholder="&nbsp;请输入"></p>
+            <p>办理时间:<input type="text" id="time" placeholder="&nbsp;请输入"></p>
+        </div>
+        <div class="conten">
+            <div class="con">生育证办理申请材料:</div>
+            <div class="cont">
+                <span class="cont_word">1.夫妻双方户口薄(首页和本人页)</span>
+                <a href="" class="file ">
+                    <span class="showFileName">上传电子版</span>
+                    <input type="file" name="" id="img">
+                    <span class="fileerrorTip"></span>
+                </a>
+            </div>
+            <div class="cont">
+                <span class="cont_word">2.夫妻双方身份证</span>
+                <a href="" class="file ">
+                    <span class="showFileName">上传电子版</span>
+                    <input type="file" name="" id="img1">
+                    <span class="fileerrorTip"></span>
+                </a>
+            </div>
+            <div class="cont">
+                <span class="cont_word">3.夫妻双方结婚证</span>
+                <a href="" class="file ">
+                    <span class="showFileName">上传电子版</span>
+                    <input type="file" name="" id="img2";onchange="c()">
+                    <span class="fileerrorTip"></span>
+                </a>
+            </div>
+            <div class="cont">
+                <span class="cont_word">4.夫妻双方近期两寸照片</span>
+                <a href="" class="file ">
+                    <span class="showFileName">上传电子版</span>
+                    <input type="file" name="" id="img3">
+                    <span class="fileerrorTip"></span>
+                </a>
+            </div>
+            <div class="cont">
+                <span class="cont_word">5.生育证申请表</span>
+                <a href="" class="file ">
+                    <span class="showFileName">上传电子版</span>
+                    <input type="file" name="" id="img4">
+                    <span class="fileerrorTip"></span>
+                </a>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <a id="btn" onclick="mySwitch()">提交</a>
+        </footer>
+    </form>
+    <div id="box" style="display: none">
+        <span>您已上传成功</span>
+    </div>
+</body>
+<script src="../../../js/jquery-1.11.1.min.js"></script>
+<script>
+   function mySwitch(){
+       $('#box').css('display','block');
+       var timer=setTimeout(function () {
+           window.clearTimeout(timer)
+           $('#box').css('display','none');
+       },2000)
+   }
+</script>
+</html>

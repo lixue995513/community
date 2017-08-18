@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>许愿申请</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="page4.4.css">
+</head>
+<body>
+<div id="wishApply">
+    <header>
+        <span> 许 愿 申 请 </span>
+        <a href="page4.2.html">
+            <img src="../../../img/return.png" alt="">
+        </a>
+    </header>
+    <div class="content">
+        <form action="">
+            <ul>
+                <li><input type="text">申报心愿</li>
+                <li><input type="text">* 标题</li>
+                <li><input type="text">* 分类</li>
+                <li><input type="text">* 联系人</li>
+                <li><input type="text">* 联系电话</li>
+                <textarea name="" id="" cols="10" rows="5">* 详情:</textarea>
+                <li class="add">
+                    上传照片
+                    <a href="" class="file ">
+                        <span class="showFileName">+添加照片</span>
+                        <input type="file" name="" id="img1">
+                        <span class="fileerrorTip"></span>
+                    </a>
+                </li>
+            </ul>
+                <button>确认申报心愿</button>
+        </form>
+    </div>
+</div>
+<script src="../../../libs/jquery-1.11.1.min.js"></script>
+<script>
+    window.onload = function(){
+        $(".file").on("change","input[type='file']",function(){
+
+            var filePath=$(this).val();
+
+            if(filePath.indexOf("jpg")!=-1 || filePath.indexOf("png")!=-1){
+                $(this).next(".fileerrorTip").html("").hide();
+                var arr=filePath.split('\\');
+                var fileName=arr[arr.length-1];
+                $(this).prev(".showFileName").html("文件已上传");
+            }else{
+
+                $(this).prev(".showFileName").html("").hide();
+                $(this).next(".fileerrorTip").html("文件上传错误").show();
+                return false
+            }
+        })
+    }
+</script>
+
+</body>
+</html>

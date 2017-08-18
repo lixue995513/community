@@ -1,0 +1,75 @@
+#mine_heart{
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 100%;
+    background-color: #fff;
+}
+li{
+    color: #8a8a8a;
+}
+header{
+    width:100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #F6CECF;
+    border-bottom:1px solid #e6e6e6;
+
+}
+header span{
+    font-size: 24px;
+    color: #ef3d6d;
+}
+.content{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.content .cont_tit{
+    height:120px;
+    padding-top: 20px;
+    background-color: #F6CECF;
+    border-bottom:10px solid #e6e6e6;
+}
+.cont_tit img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0px auto;
+}
+.cont_tit span{
+    color: #fff;
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+}
+.content li{
+    color: #8a8a8a;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px 0 5px;
+    border-bottom: 2px solid #e6e6e6;
+}
+.com_boot{
+    width:100%;
+    height: 40px;
+    bottom: 0px;
+    line-height: 40px;
+    border-top: 1px solid #ccc;
+    color: #000;
+    position: absolute;
+    /*background-color: #1E88C7;*/
+}
+.com_boot span{
+    width:50%;
+    display: block;
+    float: left;
+    padding-left: 50px;
+}
+.content .f_right{
+    color: #8a8a8a;
+    padding-right: 5px;
+    font-size: 16px;
+}

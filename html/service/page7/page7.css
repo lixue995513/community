@@ -1,0 +1,16 @@
+html,body{
+    background-color: #fff;
+}
+.mui-bar{
+    width:100%;
+    background-color: #02C1ED;
+}
+.content{
+    widht:100%;
+    height:100%;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+    color:black;
+}

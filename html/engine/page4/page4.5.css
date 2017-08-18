@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 3px solid #f9f9f9;
+    /*margin-bottom: 10px;*/
+    background-color: #F6CCD0;
+}
+header span{
+    font-size: 24px;
+    color: #EF3D6D;
+}
+header a img{
+    text-decoration: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+.content{
+    width:100%;
+    height:100%;
+    background:url(../../../img/wishList.png) repeat center;
+    background-size:100% 100%;
+    position: absolute;
+}
+.content .cont_con{
+    color:#000;
+    margin:10px auto;
+    width:95%;
+    background-color: #fff;
+    border: 1px dashed hotpink;
+}
+.content .cont_tit{
+    color:#000;
+    padding: 10px;
+    border-bottom: 3px solid #F6CCD0;
+
+}
+.cont_tit .word{
+    font-weight: 900;
+}
+.content .cont_bom{
+    /*position: relative;*/
+    color:#000;
+    padding: 10px 0 30px 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.content .con_list{
+    font-size: 12px;
+    color:#ccc;
+    padding: 10px 0 0 20px;
+    margin-bottom: 30px;
+}
+.con_list li{
+    padding-top: 5px;
+}
+.con_list li span{
+    padding:30px 40px 0px 20px;
+}
+
+.content .con_list a{
+    display: block;
+    color: #fff;
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: hotpink;
+    margin-top: 10px;
+
+}
+.footer{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.footer .foot_t{
+    display: block;
+    padding: 0px 0 5px 5px;
+    border-bottom: 1px solid #ccc;
+}
+.footer li{
+    padding-top: 20px;
+    position: relative;
+}
+.footer .line{
+   background-color: hotpink;
+    width: 2px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top:30px;
+    left: 120px;
+}
+.footer li .raduis{
+    background-color: hotpink;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top:25px;
+    left: 115px;
+}
+.footer span{
+    font-size: 12px;
+    padding:30px 10px 0px 30px;
+}
+

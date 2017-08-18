@@ -1,0 +1,98 @@
+#wishApply {
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 100%;
+    background-image: url(../../../img/wishList.png);
+    background-size: 100% 100%;
+    position: absolute;
+}
+header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 3px solid #f9f9f9;
+    margin-bottom: 10px;
+}
+header span{
+    font-size: 24px;
+    color: #EF3D6D;
+}
+header a img{
+    text-decoration: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.content{
+    width:95%;
+    margin:0 auto;
+    background-color: #fff;
+    border: 1px dashed hotpink;
+}
+.content li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    color:#8a8a8a;
+    padding-left: 10px;
+}
+form input{
+    float: right;
+}
+form button{
+    display: block;
+    color: #fff;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    background-color: hotpink;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+textarea{
+    width: 100%;
+    color:#8a8a8a;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+form .add{
+    height: 40px;
+    line-height: 40px;
+}
+.file {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1px 4px;
+    overflow: hidden;
+    color: #1E88C7;
+    font-size: 14px;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 18px;
+    float: right;
+    right: 2px;
+    top: 5px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.conten .file:hover {
+    background: #fff;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
